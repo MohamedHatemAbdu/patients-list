@@ -1,7 +1,7 @@
 Patients-List App
 =
 
-It is an explanatory application example to apply the below defined technology stack. The application does the below:
+It is an explanatory application to apply the below defined technology stack. The application does the below:
 
 - Retrieves Added Patients records from local database and shows them in list in the home screen.
 - Gives the ability to add more Patients records to the local data base.
