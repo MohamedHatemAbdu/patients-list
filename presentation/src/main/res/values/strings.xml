@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Patient List</string>
+
+    <string name="patient_list_fragment_label">Add Patient</string>
+    <string name="settings_fragment_label">User Settings</string>
+
+    <!-- patients_list-->
+
+
+    <!-- patients_item-->
+    <string name="patient_id">Id: %s</string>
+    <string name="patient_name">Name: %s</string>
+    <string name="patient_email">Email: %s</string>
+    <string name="patient_age">Age: %s</string>
+    <string name="patient_gender">Gender: %s</string>
+
+    <string name="patient_id_label">Id</string>
+    <string name="patient_name_label">FullName</string>
+    <string name="patient_email_label">Email</string>
+    <string name="patient_age_label">Age</string>
+    <string name="patient_gender_label">Gender : </string>
+    <string name="patient_male_label">Male</string>
+    <string name="patient_female_label">Female</string>
+    <string name="patient_other_label">Other</string>
+
+    <string name="no_patients">No patients saved, add new ones by fill the info and click on the fab.</string>
+
+    <!-- settings-->
+    <string name="curr_user_name_label">Current username</string>
+    <string name="curr_number_of_added_patients_label">Current number of added patients</string>
+    <string name="curr_max_number_of_allowed_patients_label">Max number of patients allowed</string>
+    <string name="save_btn_label">Save</string>
+
+    <!-- nav drawer-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Savics</string>
+    <string name="nav_header_subtitle">support@savics.org</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_communicate">Communicate</string>
+
+    <!-- menu-->
+    <string name="action_clear_all">Clear All</string>
+
+
+</resources>

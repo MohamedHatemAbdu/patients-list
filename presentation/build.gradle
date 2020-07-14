@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+
+    defaultConfig {
+
+        applicationId "com.me.patientlist"
+
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner rootProject.ext.testInstrumentationRunner
+        multiDexEnabled true
+
+    }
+    buildTypes {
+
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    def presentationDependencies = rootProject.ext.presentationDependencies
+    def presentationTestDependencies = rootProject.ext.presentationTestDependencies
+
+
+    // android support libs
+    implementation presentationDependencies.material
+    implementation presentationDependencies.appCompat
+    implementation presentationDependencies.recyclerview
+
+    // database
+    implementation presentationDependencies.room
+    annotationProcessor presentationDependencies.roomCompiler
+    implementation presentationDependencies.roomRxJava
+
+
+    //lifecycle
+    implementation presentationDependencies.lifeCycleExtensions
+
+    //UI
+    implementation presentationDependencies.navigationFragment
+    implementation presentationDependencies.navigationUI
+
+    // butterKnife
+    implementation presentationDependencies.butterknife
+    annotationProcessor presentationDependencies.butterknifeCompiler
+
+
+    implementation presentationDependencies.constraintLayout
+    implementation presentationDependencies.recyclerviewAnimators
+
+
+
+
+    //dagger
+    annotationProcessor presentationDependencies.daggerCompiler
+    annotationProcessor presentationDependencies.daggerAndroidProcessor
+    implementation presentationDependencies.daggerAndroidSupport
+    implementation presentationDependencies.dagger
+    implementation presentationDependencies.daggerAndroid
+
+
+
+    //multidex
+    implementation presentationDependencies.multidex
+
+
+    implementation project(':data')
+    implementation project(':domain')
+
+}
+repositories {
+    mavenCentral()
+    google()
+}
