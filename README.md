@@ -8,6 +8,8 @@ It is an explanatory application to apply the below defined technology stack. Th
 - Gives the ability to change the maximum capacity of patiens records through the settings screen.
 - Gives the ability to set your user name through the settings screen.
 - Gives the ability to clear the data through the top bar settings menu.
+- Gives the ability to share the patients records through the "share" option in the side menu.
+
 
 <img src="/screenshot/screen_1.png" width= "250px"/> <img src="/screenshot/screen_2.png" width= "250px"/> <img src="/screenshot/screen_3.png" width= "250px"/> <img src="/screenshot/screen_4.png" width= "250px"/> <img src="/screenshot/screen_5.png" width= "250px"/>
 
