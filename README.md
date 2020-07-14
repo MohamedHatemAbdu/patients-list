@@ -23,6 +23,7 @@ Here's some of the core android technology stack applied in this application:
 - [Android Architecture Components](https://developer.android.com/topic/libraries/architecture).
 - [Navigation component](https://developer.android.com/guide/navigation/navigation-getting-started).
 - Reactive paradigm using [RxJava](https://github.com/ReactiveX/RxJava).
+- Bind Android views and callbacks to fields and methods using [Butterknife] (https://github.com/JakeWharton/butterknife).
 
 Discussions
 -
